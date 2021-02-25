@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+
+html,
+body,
+input {
+  font-family: "Heebo", sans-serif;
+  color: $body;
+}
+
+html {
+  font-size: 16px;
+
+  @media (max-width: $large) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $med) {
+    font-size: 13px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 3vw;
+  }
+}
+
+body,
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  color: $titles;
+}
+
+* {
+  &.uppercase {
+    text-transform: uppercase;
+  }
+}

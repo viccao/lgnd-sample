@@ -1,0 +1,113 @@
+.grid {
+  @media (min-width: $med) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  --gutter: -2rem;
+
+  // margin: 0 var(--gutter);
+  padding-top: 3rem;
+
+  &--gutter {
+    flex: 0 0 100%;
+    width: 100%;
+
+    @media (min-width: $med) {
+      max-width: calc(-1 * var(--gutter));
+    }
+  }
+
+  &--sizer,
+  &--item {
+    flex: 0 0 100%;
+    width: 100%;
+
+    @media (min-width: $med) {
+      max-width: calc(25% - (var(--gutter) * -1));
+    }
+    // padding: 0 calc(-1 * var(--gutter));
+    margin-bottom: calc(-1 * var(--gutter));
+    border-radius: rem(6);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    &--img {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+    }
+  }
+
+  &--item {
+    height: rem(435);
+  }
+
+  /* 2 columns wide */
+  &--item--width2 {
+    flex: 1 1 100%;
+
+    @media (min-width: $med) {
+      max-width: calc(50% - (var(--gutter) * -1));
+    }
+
+    height: rem(332);
+
+    .container {
+      border-radius: rem(6);
+      position: relative;
+      overflow: hidden;
+
+      h2 {
+        max-width: 60%;
+        font-size: rem(26);
+      }
+    }
+  }
+
+  article {
+    .container {
+      padding: 1rem;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: rgba(#303133, 0.5);
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+
+      h2 {
+        font-size: rem(21);
+        max-width: 75%;
+        margin: 0 0 1rem;
+      }
+
+      h6 {
+        font-size: rem(16);
+        margin: 0 0 1rem;
+        letter-spacing: rem(1.17);
+      }
+
+      h6,
+      h2,
+      p {
+        color: white;
+        flex: 0 0 100%;
+      }
+
+      .heart {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: rem(24);
+        height: rem(24);
+      }
+    }
+  }
+}

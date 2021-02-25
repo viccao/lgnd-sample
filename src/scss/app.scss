@@ -1,0 +1,25 @@
+$baseFontSize: 16;
+$primary: #47c5e0;
+$secondary: #5371f0;
+$titles: #303133;
+$body: #8d8d8f;
+
+$large: 1280px;
+$med: 993px;
+$tablet: 768px;
+$mobile: 620px;
+
+@function rem($pixels, $context: $baseFontSize) {
+  @return $pixels / $context * 1rem;
+}
+
+@function self($multiple) {
+  @return calc(var(--self) * #{$multiple});
+}
+
+@import "global/reset";
+@import "global/typography";
+@import "base/layout";
+@import "base/header";
+@import "base/masonry";
+@import "base/buttons";

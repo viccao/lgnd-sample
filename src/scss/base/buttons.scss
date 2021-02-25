@@ -1,0 +1,14 @@
+.button {
+  border-radius: 100px;
+  padding: 0.5rem 1.5rem;
+  background: $primary;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  transition: 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    filter: brightness(0.85);
+  }
+}
