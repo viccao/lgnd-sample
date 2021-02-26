@@ -105,6 +105,7 @@ header::after {
   .grid {
     display: flex;
     flex-wrap: wrap;
+    margin-right: var(--gutter);
   }
 }
 .grid--gutter {

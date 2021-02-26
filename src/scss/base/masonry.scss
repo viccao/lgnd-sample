@@ -2,6 +2,7 @@
   @media (min-width: $med) {
     display: flex;
     flex-wrap: wrap;
+    margin-right: var(--gutter);
   }
 
   --gutter: -2rem;
