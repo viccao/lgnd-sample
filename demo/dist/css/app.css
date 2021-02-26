@@ -145,11 +145,11 @@ header::after {
 }
 .grid--item--width2 {
   flex: 1 1 100%;
-  height: 20.75rem;
 }
 @media (min-width: 993px) {
   .grid--item--width2 {
     max-width: calc(50% - (var(--gutter) * -1));
+    height: 20.75rem;
   }
 }
 .grid--item--width2 .container {

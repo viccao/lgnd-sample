@@ -54,9 +54,8 @@
 
     @media (min-width: $med) {
       max-width: calc(50% - (var(--gutter) * -1));
+      height: rem(332);
     }
-
-    height: rem(332);
 
     .container {
       border-radius: rem(6);
